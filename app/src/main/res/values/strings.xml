@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GlassConnect</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_upload">Upload</string>
+    <string name="title_activity_get_row_info">GetRowInfo</string>
+    <string name="title_activity_get_column_info">GetColumnInfo</string>
+    <string name="example_column_upload">Test31215</string>
+    <string name="example_row_upload">trying to test some things</string>
+    <string name="title_activity_sign__in">Sign_In</string>
+
+</resources>
