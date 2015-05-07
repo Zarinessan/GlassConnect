@@ -7,8 +7,14 @@
     <string name="title_activity_upload">Upload</string>
     <string name="title_activity_get_row_info">GetRowInfo</string>
     <string name="title_activity_get_column_info">GetColumnInfo</string>
+
     <string name="example_column_upload">Test31215</string>
     <string name="example_row_upload">trying to test some things</string>
+
     <string name="title_activity_sign__in">Sign_In</string>
+    <string name="title_activity_ask_table">AskTable</string>
+
+    <string name ="table_name">TestObject</string>
+
 
 </resources>

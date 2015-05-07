@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,7 +23,10 @@ import java.util.List;
 public class GetRowInfo extends ActionBarActivity {
 
     private String myString2;
+    private String myTable;
     private TextView myText2 = null;
+    private EditText tableName;
+    private Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +34,18 @@ public class GetRowInfo extends ActionBarActivity {
         setContentView(R.layout.activity_get_row_info);
         myString2 = " We are showing data for rows with the value " + getString(R.string.example_row_upload) + "\n\n ";
         printRowData();
-        //newDisplay2("hello");
+
+
+        submit = (Button) findViewById(R.id.submitB);
+        tableName = (EditText) findViewById(R.id.editText2);
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myTable = tableName.getText().toString();
+                printRowData();
+            }
+        });
     }
 
 
@@ -56,7 +73,7 @@ public class GetRowInfo extends ActionBarActivity {
 
     public void printRowData()
     {
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("TestObject");
+        ParseQuery<ParseObject> query = ParseQuery.getQuery(myTable);
         query.whereEqualTo( getString(R.string.example_column_upload),getString(R.string.example_row_upload) );
         query.findInBackground(new FindCallback<ParseObject>() {
             public void done(List<ParseObject> list, ParseException e) {

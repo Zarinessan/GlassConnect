@@ -56,7 +56,7 @@ public class GetColumnInfo extends ActionBarActivity {
 
     public void printColumnData()
     {
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("TestObject");
+        ParseQuery<ParseObject> query = ParseQuery.getQuery(getString(R.string.table_name));
         query.whereNotEqualTo( getString(R.string.example_column_upload),"\0" );
         //query.whereEqualTo( getString(R.string.example_column_upload),getString(R.string.example_row_upload) );
         query.findInBackground(new FindCallback<ParseObject>() {
