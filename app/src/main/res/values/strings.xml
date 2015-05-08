@@ -15,6 +15,8 @@
     <string name="title_activity_ask_table">AskTable</string>
 
     <string name ="table_name">TestObject</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="title_activity_sign_up">SignUp</string>
 
 
 </resources>

@@ -44,6 +44,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.zarinessan.glassconnect.MainActivity" />
         </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="@string/title_activity_sign_in"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zarinessan.glassconnect.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zarinessan.glassconnect.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
