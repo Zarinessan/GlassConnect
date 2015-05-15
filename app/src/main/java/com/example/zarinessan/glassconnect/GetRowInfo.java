@@ -74,15 +74,19 @@ public class GetRowInfo extends ActionBarActivity {
     public void printRowData()
     {
         ParseQuery<ParseObject> query = ParseQuery.getQuery(myTable);
-        query.whereEqualTo( getString(R.string.example_column_upload),getString(R.string.example_row_upload) );
+        query.whereEqualTo( getString(R.string.fake_column_upload),6.1 );
         query.findInBackground(new FindCallback<ParseObject>() {
             public void done(List<ParseObject> list, ParseException e) {
                 //newDisplay("starting done function");
                 if (e == null) {
                     //newDisplay(Integer.toString(list.size()));
                     for(ParseObject current : list ) {
-                        concatGlobal2(getString(R.string.example_column_upload)+":", current.get(getString(R.string.example_column_upload)).toString());
-                        concatGlobal2(current.getCreatedAt().toString(), "\n");
+                        concatGlobal2(getString(R.string.fake_column_upload)+":", current.get(getString(R.string.fake_column_upload)).toString());
+                        concatGlobal2(current.get("Species").toString(), "= type of tree \n");
+                        concatGlobal2(current.get("Problem").toString(), "= problem with tree \n");
+                        concatGlobal2(current.get("Owner").toString(), "= owner of tree \n\n");
+                        //concatGlobal2(current.getCreatedAt().toString(), "\n");
+
                         newDisplay2(myString2);
 
                     }

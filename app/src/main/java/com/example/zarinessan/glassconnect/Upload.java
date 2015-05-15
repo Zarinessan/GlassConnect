@@ -14,9 +14,9 @@ public class Upload extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload);
-        ParseObject testObject = new ParseObject("TestObject");
+        ParseObject testObject = new ParseObject("Legit");
         //testObject.put("foo", "Value");
-        testObject.put( getString(R.string.example_column_upload),getString(R.string.example_row_upload) );
+        testObject.put( getString(R.string.example_column_upload), "Bonsai" );
         testObject.saveInBackground();
     }
 

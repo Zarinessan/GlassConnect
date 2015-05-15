@@ -65,7 +65,7 @@ public class GetColumnInfo extends ActionBarActivity {
                 if (e == null) {
                    // newDisplay(Integer.toString(list.size()));
                     for(ParseObject current : list ) {
-                        concatGlobal(" ", current.get(getString(R.string.example_column_upload)).toString());
+                        concatGlobal("", current.get(getString(R.string.example_column_upload)).toString());
                         //concatGlobal(current.getCreatedAt().toString(), "\n");
                         newDisplay(myString);
 

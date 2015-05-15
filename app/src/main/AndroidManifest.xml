@@ -7,6 +7,7 @@
 
     <application
         android:name=".GlassConnectApplication"
+        android:screenOrientation="portrait"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,6 +23,7 @@
         </activity>
         <activity
             android:name=".Upload"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_upload"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -30,6 +32,7 @@
         </activity>
         <activity
             android:name=".GetRowInfo"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_get_row_info"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -38,6 +41,7 @@
         </activity>
         <activity
             android:name=".GetColumnInfo"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_get_column_info"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -46,6 +50,7 @@
         </activity>
         <activity
             android:name=".SignIn"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_sign_in"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -54,6 +59,7 @@
         </activity>
         <activity
             android:name=".SignUp"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_sign_up"
             android:parentActivityName=".MainActivity" >
             <meta-data
